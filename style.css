@@ -1,0 +1,267 @@
+/* css reset */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* css variables */
+
+:root{
+    --navbar-height:59px;
+}
+/* navigation bar */
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    
+    
+}
+
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    top: 0px;
+    left: 0px;
+}
+
+/* navigation bar logo and images */
+
+#logo{
+    margin: 3px 6px;
+}
+#logo img{
+    width: 30%;
+    margin: 10px 10px;
+}
+
+/* navigation bar list styling */
+
+
+
+#navbar ul{
+    display: flex;
+}
+
+#navbar ul li{
+   
+    list-style: none;
+    font-size: 1.3rem;
+
+}
+
+#navbar ul li a{
+    color: white;
+   display: block;
+   padding: 3px 22px;
+   border-radius: 20px;
+   text-decoration: none;
+   font-family: 'Bree Serif', serif;
+}
+
+#navbar ul li a:hover{
+   color: black;
+   background-color: tomato;
+}
+
+/* Home section */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 350px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#home::before{
+    content: "";
+    background: url(images/bg3.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+    top: 0px;
+    left: 0px;
+}
+
+#home h1{
+    text-align: center;
+    color: black);
+    font-family: 'Bree Serif', serif;
+}
+
+#home p{
+    text-align: center;
+    color:black);
+    font-size: 1.5rem;
+    font-family: 'Baloo Paaji 2', cursive;
+}
+#home .btn{
+    font-size: 25px;
+    padding: 10px 25px;
+    border-radius: 13px;
+    border: 2px solid white;
+}
+#home .btn:hover{
+    background-color: tomato;
+    border: 2px solid tomato;
+
+}
+
+
+/* services section  */
+
+#services{
+    display: flex;
+    margin: 10px;
+}
+
+#services-container{
+    margin-top:200px ;
+}
+
+#services .box{
+    border: 2px solid brown;
+    border-radius: 25px;
+    margin: 6px;
+    padding: 25px;
+    background-color: rgb(241, 234, 234);
+}
+
+#services img{
+    height: 200px;
+    display: block;
+    margin: auto;
+}
+
+/* clients section  */
+#clent-section{
+    height: 344px;
+    
+}
+
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url(images/bg2.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 50%;
+    z-index: -1;
+    opacity: 0.5;
+    margin-top: 30px;
+}
+
+#clients{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.client-item{
+    padding: 33px;
+}
+
+#clients img{
+    height: 150px;
+}
+
+/* contact section  */
+
+#contact{
+    position: relative;
+    margin-top: 70px;
+    margin-bottom: 40px;
+}
+
+#contact::before{
+    content:"";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url(images/bg3.jpg) no-repeat center center/cover;
+}
+
+#contact-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 34px;
+
+}
+
+#contact-box input{
+
+}
+
+#contact-box textarea{
+width: 100%;
+padding: 0.5rem;
+}
+
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family:'bree serif' serif ;
+}
+
+
+/* footer section  */
+
+footer{
+    background: black;
+    color: white;
+    padding: 10px 25px;
+}
+
+/* utility classes */
+
+.h-primary{
+    font-size: 3.0rem;
+    padding: 12px;
+    font-family: 'Baloo Paaji 2', cursive;
+}
+}
+
+.h-secondary{
+    font-size: 2.0rem;
+    padding: 12px;
+    font-family: 'Baloo Paaji 2', cursive;
+}
+}
+
+.btn{
+    margin: 20px;
+    padding: 8px 30px;
+    border: 2px solid whitesmoke;
+    border-radius: 15px;
+    background-color: rgb(250, 149, 149);
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    cursor: pointer;
+
+}
+
+.center{
+    text-align: center;
+}
